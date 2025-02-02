@@ -1,4 +1,3 @@
-
 export const buildBabelLoader = () => {
     return {
         test: /\.(js|jsx|tsx)$/,
@@ -7,7 +6,7 @@ export const buildBabelLoader = () => {
             loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env'],
-            }
-        }
-    }
-}
+            },
+        },
+    };
+};
