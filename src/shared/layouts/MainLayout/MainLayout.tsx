@@ -20,10 +20,9 @@ export const MainLayout = (props: MainLayoutProps) => {
         token: { colorBgContainer, borderRadiusLG },
     } = theme.useToken();
 
-
     const toggleSidebar = () => {
-        setCollapsed(prev => !prev)
-    }
+        setCollapsed((prev) => !prev);
+    };
 
     return (
         <Layout className={classNames(className, s.layout)}>
